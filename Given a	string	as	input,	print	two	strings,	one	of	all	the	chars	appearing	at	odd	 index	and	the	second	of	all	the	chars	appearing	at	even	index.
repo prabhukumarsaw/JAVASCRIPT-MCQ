@@ -1,0 +1,35 @@
+Given	a	string	as	input,	print	two	strings,	one	of	all	the	chars	appearing	at	odd	
+index	and	the	second	of	all	the	chars	appearing	at	even	index.
+Test	Cases
+Output: 
+
+A1B2C3D4E
+
+Odd: 1234
+Even: ABCDE
+
+
+--------------------------------------------------------------------
+
+var str = "A1B2C3D4E";
+var len = str.length;
+var str1 = '';
+var str2 = '';
+ 
+for(var i=0 ; i<len ; i++)
+{
+
+ if(i%2==0)
+ {
+    str1 +=str[i];
+ }
+else
+{
+    str2 +=str[i];
+}
+}
+console.log('Odd:',str2);
+console.log('Even:',str1);
+
+
+
