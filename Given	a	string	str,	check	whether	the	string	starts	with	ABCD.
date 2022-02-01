@@ -1,0 +1,16 @@
+/*Given	a	string	str,	check	whether	the	string	starts	with	ABCD.*/
+
+var str = "JAVA ABCD";
+var len = str.length;
+let newStr='';
+if(str[0]=='A' && str[1]=='B' && str[2]=='C' && str[3]=='D')
+{
+    console.log("Starts with");
+}
+else
+{
+    console.log("Doesn't start with");
+ }   
+   
+   
+  Output:  Doesn
