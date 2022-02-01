@@ -1,0 +1,45 @@
+/*Given	a	string	remove	all	X or	Y present	together	in	the	string.*/
+
+
+
+var str = "AAXXXBBYYYCXXDYY";
+var len = str.length;
+let newStr='';
+
+for(let i=0; i<len; i++)
+{
+if(str[i]=='X')
+{
+    
+    if(str[i-1]=='X' )
+    {
+        continue;
+    }
+    
+    else
+    {
+        newStr +=str[i];
+    }
+    
+}
+else if(str[i]=='Y')
+{
+    
+    if(str[i-1]=='Y' )
+    {
+        continue;
+    }
+    
+    else
+    {
+        newStr +=str[i];
+    }
+    
+}
+
+else
+{
+    newStr += str[i];
+}
+}
+console.log(newStr);
