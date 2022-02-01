@@ -1,0 +1,42 @@
+/*Given	a	string	as	input,	create	a	new string	where	A	is	replaced	by	X,	B	is	
+replaced	by	Y and	all	C	and	D	are	removed.*/
+
+
+
+var str = "I GOT A BIRTHDAY	CARD";
+var len = str.length;
+let newStr='';
+ 
+for(var i=0 ; i<len ; i++)
+{
+
+ if(str[i]=='A')
+ {
+    newStr +='X';
+ }
+else if(str[i]=='B')
+{
+    newStr +='Y';
+}
+
+else if(str[i]=='C' || str[i]=='D')
+{
+    if(str[i-i]=='C' || 'D')
+    {
+        continue;
+    }
+    else
+    {
+        newStr +=str[i];
+    }
+    
+}
+else
+{
+    newStr += str[i];
+}
+}
+console.log(newStr);
+
+
+Output: I GOT X YIRTHXY XR
