@@ -1,0 +1,18 @@
+/*Given	a	two	strings	representing	names	of	people,	check	whether	they	are	the	
+same	person.	Note	that	the	case	of	alphabets	can	be	different.	So	before	
+comparing,	convert	them	into	either	uppercase	or	lowercase.*/
+
+
+var str1 = 'James';
+var str2 = 'JAMES';
+str1 = str1.toLowerCase();
+str2 = str2.toLowerCase();
+
+ if(str1.toLowerCase() === str2.toLowerCase())
+ {
+    console.log('Same');
+ }
+else
+{
+    console.log('Different');
+}
