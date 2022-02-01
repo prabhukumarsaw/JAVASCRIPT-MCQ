@@ -1,0 +1,33 @@
+/*Given	a	string	as	input	replace	1	by	@,	2	by	#. Other	characters	appear	as	it	is	in	
+the	new	string	and	are	not	changed.*/
+
+..................................................................................................
+
+
+
+
+
+var str = "ab11cd22ef";
+var len = str.length;
+let newStr='';
+ 
+for(var i=0 ; i<len ; i++)
+{
+
+ if(str[i]==1)
+ {
+    newStr +='@';
+ }
+else if(str[i]==2)
+{
+    newStr +='#';
+}
+else
+{
+    newStr += str[i];
+}
+}
+console.log(newStr);
+
+
+OutPut: ab@@cd##ef
