@@ -1,0 +1,11 @@
+/*Given	a	string	str,	replace	ABCD	with	XYZ.*/
+
+
+var str = "ABCDABCDABCD";
+let m=str.length;
+let count=0;
+str = str.replaceAll("ABCD","XYZ");
+
+console.log(str);
+
+output:  XYZXYZXYZ
