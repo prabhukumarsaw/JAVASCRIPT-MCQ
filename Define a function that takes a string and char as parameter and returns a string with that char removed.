@@ -1,0 +1,26 @@
+//Define a function that takes a string and char as parameter and returns a string with that char removed.
+
+
+//print sum of digit
+
+function RemoveChar(str, char) 
+{
+let newStr='';
+  for(let i=0;i<str.length;i++)
+   {
+    if(str[i]==char)
+    {
+        //do noting
+    }
+    else
+    {
+        newStr+=str[i];
+    }   
+   }
+   
+    return newStr;    
+}
+
+console.log(RemoveChar('moozoom','m'));
+console.log(RemoveChar('abcaabca','a'));
+
