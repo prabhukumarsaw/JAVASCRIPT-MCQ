@@ -1,0 +1,24 @@
+//Function: Replace char1 to char2 in new string
+
+
+
+function replaceChar(str,char1,char2) 
+{
+    let newStr='';
+    for(let i=0;i<str.length;i++)
+    {
+        if(str[i]==char1)
+        {
+            newStr+=char2;
+        }
+        else
+        {
+            newStr+=str[i];
+        }
+    }
+    return newStr;
+}
+
+console.log(replaceChar('Hello','l','u'));
+
+output: Heuuo
