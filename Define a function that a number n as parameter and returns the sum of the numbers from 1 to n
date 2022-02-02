@@ -1,0 +1,18 @@
+
+
+
+//print sum of digit
+
+function SumOfDig(n) 
+{
+let sum=0;
+    for(let i=1;i<=n;i++)
+    {
+    sum+=i;
+    }
+    return sum;    
+}
+
+console.log(SumOfDig(10));
+console.log(SumOfDig(2));
+
