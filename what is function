@@ -1,0 +1,15 @@
+(b)What is a function. Why do we use function?
+ANS:->Function are modules of code that are used to perform a specific task.
+Function can be used multiple times
+
+They provide better modularity and high degree of code reusing.
+
+(c)Explain the flow of execution when a function is called.
+When a function is called
+The program leaves the current section of code
+
+Begins to execute the first line inside the function.
+
+Code inside the function is executed from top to bottom.
+
+When the program leaves th function, it goes back to where it started from.
