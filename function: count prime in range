@@ -1,0 +1,27 @@
+
+
+
+
+function isPrime(num){
+   let count = 2;
+   while(count < (num / 2)+1){
+      if(num % count !== 0){
+         count++;
+         continue;
+      };
+      return false;
+   };
+   return true;
+};
+function primeNum(n){
+   let count = 0;
+   for(let i =2; i <=n; i++){
+      if(isPrime(i)){
+         count++;
+      };
+   };
+   return count;
+};
+console.log(primeNum(75));
+console.log(primeNum(150));
+console.log(primeNum(1));
