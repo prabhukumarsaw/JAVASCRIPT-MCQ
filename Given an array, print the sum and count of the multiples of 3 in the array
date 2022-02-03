@@ -1,0 +1,31 @@
+
+
+//Create array of 1 to n
+
+//push=insert at end
+//unshift= insert at start
+//pop=remove at end
+//shift=remove at start
+//splice=remove or add element
+//concat
+
+
+
+
+const Arr= [1,2,3,4,5,6,7,8,9,10];
+let sum=0;
+let count=0;
+for(let i=1; i<=Arr.length; i++)
+{
+if(Arr[i]%3==0)
+{
+    sum+=Arr[i];
+    count++;
+}
+
+}
+
+console.log('Sum=',sum,'Count=',count);
+
+
+output: Sum= 18 Count= 3
