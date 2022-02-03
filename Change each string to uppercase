@@ -1,0 +1,14 @@
+
+
+const string=['Hi','Hello','mY','GOOD'];
+let len = string.length;
+let sum = 0;
+for (let i=0; i<len; i++)
+{
+    let str=string[i];
+    string[i] = str.toUpperCase();
+}
+
+console.log(string);
+
+output: [ 'HI', 'HELLO', 'MY', 'GOOD' ]
