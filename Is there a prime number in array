@@ -1,0 +1,31 @@
+
+
+//Is there a prime number in array
+function hasPrime(number) 
+{
+    let length = number.length;
+    for (let i = 0; i < length; i++)
+    {
+        let check = isPrime(number[i]);
+        if(check)
+        {
+            return true;
+        }
+    }
+    return false;
+}
+
+function isPrime(num) 
+{
+    for (let i = 2; i <=num-1; i++)
+    {
+        if(num%i==0)
+        {
+            return false;
+        }
+    }
+    return true;
+}
+
+let numberArray=[5,10,11];
+console.log(hasPrime(numberArray));
