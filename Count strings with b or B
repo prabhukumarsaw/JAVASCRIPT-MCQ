@@ -1,0 +1,29 @@
+
+
+//Count strings with b or B
+
+function hasB(str)
+{
+    let lenS=str.length;
+    for(let i=0; i<lenS; i++)
+    {
+        if(str[i]=='b' || str[i]=='B')
+        {
+            return true;
+        } 
+    }
+    return false;
+
+}
+
+const strings=['Hi', 'ball', 'CAB', 'Bye', 'Good'];
+let len=strings.length;
+let count=0;
+for (let i=0; i<len; i++)
+{
+    if(hasB(strings[i]))
+    {
+        count++;
+    }
+}
+console.log('Number strings with b or B',count);
