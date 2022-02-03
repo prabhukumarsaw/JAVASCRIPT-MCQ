@@ -1,0 +1,15 @@
+
+const num=[1,2,3,4,5,6,7,8,9,10];
+let len = num.length;
+let count = 0;
+for (let i=0; i<len; i++)
+{
+    if(num[i]%2==0)
+    {
+        count++;
+    }
+}
+
+console.log('Number of Even in Array',count);
+
+output:  Number of Even in Array 5
