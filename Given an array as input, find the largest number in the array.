@@ -1,0 +1,20 @@
+//Given an array as input, find the largest number in the array.
+
+function findMax(arr)
+{
+    let len = arr.length;
+    let max=arr[0];
+   for(var i=0;i<len;i++)
+    {
+        if(arr[i]>max)
+        {
+            max = arr[i];
+        }
+    }
+    console.log('Max=',max)
+}
+
+const a=[100,200,10,20,50,64];
+    findMax(a);
+    
+    O/P=  Max= 200
