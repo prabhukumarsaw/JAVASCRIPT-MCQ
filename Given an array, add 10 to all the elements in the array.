@@ -1,0 +1,18 @@
+/Given an array, add 10 to all the elements in the array.
+
+function Display(arr)
+{
+    
+    for (let i = 0; i < arr.length; i++)
+    {
+       arr[i]+=10;
+    }
+ 
+   console.log(arr);
+}
+const arr =[2,3,5,7];
+
+    Display(arr);
+    
+    
+    Output: [ 12, 13, 15, 17 ]
