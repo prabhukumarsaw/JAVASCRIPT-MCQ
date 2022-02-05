@@ -1,0 +1,21 @@
+//Given an array, add Hello to all the elements in the array. Also, print the array.
+
+
+function Display(arr)
+{
+    
+    for (let i = 0; i < arr.length; i++)
+    {
+       arr[i]='Hello '+arr[i];  
+''
+                  
+    }
+ 
+   console.log(arr);
+}
+const arr =['Jack', 'Mary'];
+
+    Display(arr);
+    
+    
+    o/p=  [ 11, 12, 13, 14, 15 ]
