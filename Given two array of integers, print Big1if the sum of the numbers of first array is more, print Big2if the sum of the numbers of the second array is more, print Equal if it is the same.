@@ -1,0 +1,40 @@
+/*Given two array of integers, print Big1if the sum of the numbers
+of first array is more, print Big2if the sum of the numbers of the second array is
+more, print Equal if it is the same.*/
+
+
+
+function findArr(arr1,arr2)
+{
+    let sum1=0,sum2=0;
+    let len1 = arr1.length;
+    let len2 = arr2.length;
+    
+    for (let i = 0; i < len1; i++)
+    {
+        sum1+=arr1[i];
+    }
+    for (let i = 0; i < len2; i++)
+    {
+        sum2+=arr2[i];
+    }
+
+    if(sum1==sum2)
+    {
+        console.log('Equal');
+    }
+    else if(sum1>sum2)
+    {
+        console.log('Big1');
+    }
+    else
+    {
+        console.log('Big2');
+    }  
+}
+const a =[50,100];
+const b =[1,2,3,4,5,6];
+
+    findArr(a,b);
+    
+  O/P== Big1
