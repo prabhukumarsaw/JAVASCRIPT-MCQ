@@ -1,0 +1,26 @@
+/*Given an array of numbers as input, find out which of the first
+or last element is larger. If the first is larger print FIRST, if the last is 
+larger print LAST. If they are equal print EQUAL.Also print the value.*/
+
+
+
+
+function makeArray(arr)
+{
+    let len = arr.length;
+    
+    if(arr[0]>arr[len-1])
+    {
+        console.log('FIRST:',arr[0]);
+    }
+    else
+    {
+        console.log('LAST:',arr[len-1]);
+    }
+   
+}
+const arr =[10,8,6,4,2,0];
+
+    makeArray(arr);
+    
+    O/P= FIRST: 10
