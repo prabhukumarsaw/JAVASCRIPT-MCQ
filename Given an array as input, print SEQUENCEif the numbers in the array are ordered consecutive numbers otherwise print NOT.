@@ -1,0 +1,24 @@
+/*Given an array as input, print SEQUENCEif the numbers in the array are ordered
+consecutive numbers otherwise print NOT.*/
+
+
+function seqElement(arr)
+{
+    let len = arr.length;
+   
+    for(let i = 0; i < len; i++)
+    {
+        if(arr[i]>=arr[i+1])
+
+        return console.log('NOT');
+    }
+     return console.log('SEQUENCE');
+    }
+
+
+
+const a=[6];
+   seqElement(a);
+   
+   
+   O/P=SEQUENCE
