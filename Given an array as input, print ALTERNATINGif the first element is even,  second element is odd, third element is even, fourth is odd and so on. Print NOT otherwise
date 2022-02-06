@@ -1,0 +1,29 @@
+/*Given an array as input, print ALTERNATINGif the first element is even, 
+second element is odd, third element is even, fourth is odd and so on. Print NOT otherwise*/
+
+
+
+ function ArrA(a)
+{
+    let out;
+    let len = a.length;
+   
+    for(let i = 0; i < len; i++)
+    {
+        
+        if((a[i]%2==0 && i%2==0) || (a[i]%2==1 && i%2===1))
+        {
+            out='ALTERNATING';
+        }
+        
+        else
+            out='NOT';
+        
+    }
+    return out;
+
+
+}
+
+const a=[4,9,16,25,49];
+  console.log(ArrA(a));
