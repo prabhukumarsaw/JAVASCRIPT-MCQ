@@ -1,0 +1,23 @@
+/*Given a string as input, print ABFOUNDif in the array there is an 'a' immediately followed by 'b' otherwise print AB NOT FOUND.*/
+
+var str='nicebaby';
+ let word='ab';
+    let out;
+    let count = 0;
+    let len = str.length;
+   
+    for(let i = 0; i < len; i++)
+    {
+        if(str[i]=='a' && str[i+1]=='b')
+        {
+        count++;
+        
+        }      
+    }
+    //console.log(count);
+    if(count!=0){
+        console.log('AB FOUND');
+    }
+    else{
+        console.log('AB NOT FOUND');
+    }
