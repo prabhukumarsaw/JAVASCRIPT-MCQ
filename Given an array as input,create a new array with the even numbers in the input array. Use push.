@@ -1,0 +1,16 @@
+/*Given an array as input,create a new array with the even numbers in the input array. Use push.*/
+
+ function EvenNum(arr) {
+    let newArray = [];
+
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+           newArray.push(arr[i]);
+        }
+    }
+    return newArray;
+}
+var arr = [5,18,26,30,40,6,9];
+console.log(EvenNum(arr)); 
+
+O/p= [ 18, 26, 30, 40, 6 ]
