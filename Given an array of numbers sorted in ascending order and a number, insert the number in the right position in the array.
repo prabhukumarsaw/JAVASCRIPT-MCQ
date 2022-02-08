@@ -1,0 +1,23 @@
+
+
+
+
+function seqArr(arr, num)
+{
+    let len = arr.length;
+    let l=len-1;
+    while (num < arr[l] && l>=0)
+    {
+        arr[l+1] = arr[l];
+        l--;
+    }
+    arr[l+1]=num;
+    len++;
+return console.log(arr);
+}
+
+const n = [5,18,26,30,40];
+const m=6;
+seqArr(n, m);
+
+O/P= [ 5, 6, 18, 26, 30, 40 ]
