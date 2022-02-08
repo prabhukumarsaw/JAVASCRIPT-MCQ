@@ -1,0 +1,24 @@
+/*Given an array as input, find the largest number in the array and remove it.*/
+
+
+function delMax(arr)
+{
+let max =arr[0];
+let len = arr.length;
+for (let i = 1; i < len; i++)
+{
+    if (arr[i] > max)
+    {
+    max= arr[i];
+    }
+}
+let remove = arr.indexOf(max);
+arr.splice(remove, 1);
+//return console.log(max);
+return console.log(arr);
+}
+
+const n = [100,10,20,50,64,200];
+delMax(n);
+
+output=[ 100, 10, 20, 50, 64 ]
