@@ -1,0 +1,77 @@
+
+
+
+
+//Create JSON for rhe company with the following details.
+
+
+
+let product1 ={
+    code: 'PX101',
+    stock: 15,
+    price: 30
+}
+
+
+
+let product2 ={
+    code: 'PX102',
+    stock: 24,
+    price: 20
+}
+
+
+
+let product3 ={
+    code: 'PX103',
+    stock: 33,
+    price: 10
+}
+
+const products=[product1, product2, product3];
+//console.log(products);
+
+let shop ={
+    prodName : products
+}
+
+let product4 ={
+    code: 'PX104',
+    stock: 10,
+    price: 40
+}
+
+shop.prodName.push(product4);
+
+
+/* calculate totalStockQty. Add this field to the shop JSON. Display it*/
+
+function TotalStockQty(compJSON){
+    let proArr=compJSON.prodName;
+    let total=0;
+    for(let i=0; i<proArr.length; i++)
+    {
+        let add=proArr[i];
+        total=total + add.price;
+    }
+    return total;
+}
+let totalStock = TotalStockQty(shop);
+
+
+/*Create a JSON and add it to the shop. Also re-compute and update totalStockQty. */
+
+shop['totalStockQty']=totalStock
+//console.log(shop);
+
+function productInc(compJSON)
+{
+    let proArr=compJSON.prodName;
+    for(let i=0; i<proArr.length; i++)
+    {
+        let pro =proArr[i];
+        pro.price=pro.price*1.10;
+    }   
+}
+productInc(shop);
+console.log(shop);
