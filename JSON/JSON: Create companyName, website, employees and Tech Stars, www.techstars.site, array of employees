@@ -1,0 +1,39 @@
+
+//Create JSON for rhe company with the following details.
+
+
+let emp1 = {
+    name: 'sam',
+    dept: 'Tech',
+    Designation: 'Manager',
+    salary: '40000',
+    raise: true
+}
+
+let emp2 = {
+    name: 'Mary',
+    dept: 'Finance',
+    Designation: 'Trainee',
+    salary: '18500',
+    raise: true
+}
+let emp3 = {
+    name: 'Bill',
+    dept: 'HR',
+    Designation: 'Executive',
+    salary: '212000',
+    raise: true
+}
+
+
+// companyName, website, employees
+// Tech Stars, www.techstars.site, array of employees
+
+const empArray = [emp1, emp2, emp3]
+let company = {
+    companyName : 'Tech Stars',
+    website : 'www.techstars.site',
+    employees : [empArray]
+}
+
+console.log(company);
