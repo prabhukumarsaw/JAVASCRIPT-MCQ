@@ -1,0 +1,26 @@
+//Create JSON for each employee with the following details.
+
+let emp1 = {
+    name: 'sam',
+    dept: 'Tech',
+    Designation: 'Manager',
+    salary: '40000',
+    raise: true
+}
+
+let emp2 = {
+    name: 'Mary',
+    dept: 'Finance',
+    Designation: 'Trainee',
+    salary: '18500',
+    raise: true
+}
+let emp3 = {
+    name: 'Bill',
+    dept: 'HR',
+    Designation: 'Executive',
+    salary: '212000',
+    raise: true
+}
+
+console.log(emp3);
