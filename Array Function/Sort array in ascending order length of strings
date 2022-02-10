@@ -1,0 +1,25 @@
+
+
+
+//Task 1.b(i) Sort array in ascending order length of strings ;
+
+const names=['Jack','Tim','Ana','Mark'];
+names.sort(compNamesAsc);
+
+function compNamesAsc(name1, name2)
+{
+    return name1.localeCompare(name2);
+    //negative if name1 comes before name2
+    //0 if same
+    //positive if name1 comes after name2
+}
+function compNamesAsc(name1, name2)
+{
+    return -1*name1.localeCompare(name2);
+    //negative if name1 comes before name2
+    //0 if same
+    //positive if name1 comes after name2
+}
+
+
+console.log(names);
