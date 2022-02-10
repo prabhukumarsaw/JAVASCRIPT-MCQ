@@ -1,0 +1,38 @@
+
+//Task 1.b(iii) Filters array on mincut and sorts in descending order
+
+const stData = [
+    {name: 'Jack',marks1: 33,marks2: 25},
+    {name: 'Bob',marks1: 40,marks2: 32},
+    {name: 'Mary',marks1: 41,marks2: 40},
+    {name: 'Tom',marks1: 24,marks2: 25},
+    {name: 'Harry',marks1: 30,marks2: 35},
+    {name: 'Anna',marks1: 32,marks2: 37},
+    
+];
+    let mincut =59;
+
+    function getStData(arr,cut)
+    {
+       let arr1 = arr.filter(function(st) {
+            return (st.marks1+st.marks2)>cut;
+        });
+        arr1.sort(comTotalDesc);
+        return arr1;
+    }
+
+    const farr = getStData(stData,mincut);
+    console.log(farr);
+
+   function comTotalDesc(st1, st2)
+   {
+       let tot1=st1.marks1 + st1.marks2;
+       let tot2=st2.marks1 + st2.marks2;
+       if(tot1>tot2)
+       return -1;
+       else if(tot1<tot2)
+       return 1;
+       else
+       return 0;
+
+   }
