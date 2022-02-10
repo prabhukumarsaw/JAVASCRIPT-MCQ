@@ -1,0 +1,22 @@
+
+
+
+//Task 1.a(iv) Employee with dept and city
+
+const emps = [
+    {name: 'Jack',city: 'Delhi',dept: 'Tech'},
+    {name: 'Ana',city: 'London',dept: 'Tech'},
+    {name: 'Sam',city: 'London',dept: 'HR'},
+    {name: 'Tim',city: 'Delhi',dept: 'HR'},
+    {name: 'Bon',city: 'Delhi',dept: 'Tech'},
+    {name: 'Mary',city: 'London',dept: 'Tech'},
+    
+]
+let city="Delhi";
+let dept="Tech";
+let emp1 = emps.filter(function(emp){
+
+    return emp.city==city && emp.dept==dept;
+})
+
+console.log(emp1);
