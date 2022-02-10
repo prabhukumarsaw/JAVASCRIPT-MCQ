@@ -1,0 +1,47 @@
+
+
+//Task 1.a(ii)Covert the code into fns
+
+const names = ['Jack','Ana','Sam','Tim','Julia']
+let ch='S';
+//find first name to start ch
+
+function findName(nameArr, tofind)
+ {
+    let name1 = nameArr.find(function(name)
+    {
+        return isString(name,tofind);
+    });
+    return name1;
+ }
+
+console.log('Using Functiom :', findName(names,'T'));
+
+function isString(name,start)
+{
+    return name[0]==start;
+}
+
+//find index to start ch
+
+function findNameIndex(nameArr, tofind)
+{
+    let index = nameArr.findIndex(function(name)
+{
+    return isString(name,tofind);
+});
+return index;
+}
+
+console.log('Element Index:',findNameIndex(names,ch));
+
+//find in array to start ch
+function findNameArr(nameArr, tofind)
+{
+    let arr =nameArr.filter(function(name)
+{
+    return isString(name,tofind);
+});
+return arr;
+}
+console.log('Arr', findNameArr(names,'J'));
