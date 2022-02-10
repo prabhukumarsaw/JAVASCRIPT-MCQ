@@ -1,0 +1,31 @@
+
+
+//Task 1.a(ii) Names of the people and ch
+
+const names = ['Jack','Ana','Sam','Tim','Julia']
+let ch = 'J';
+
+let name1 = names.find(function(name)
+{
+    return isString(name,ch);
+});
+console.log('Find',name1);
+
+function isString(name,start)
+{
+    return name[0]==start;
+}
+
+//find index 
+let index = names.findIndex(function(name)
+{
+    return isString(name,ch);
+});
+console.log('Index: ' + index);
+
+//find in array
+let arr =names.filter(function(name)
+{
+    return isString(name,ch);
+})
+console.log(arr);
