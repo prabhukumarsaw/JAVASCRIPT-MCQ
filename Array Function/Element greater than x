@@ -1,0 +1,14 @@
+
+
+//Task 1.a(i) Element greater than x
+
+const numbers = [2,5,10,12,18,21]
+
+let x = 11;
+
+let num1 = numbers.filter(function(n)
+{
+    return n>x;
+});
+console.log(num1);
+
