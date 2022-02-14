@@ -1,0 +1,52 @@
+
+
+let employee =[
+    {name: 'John', age: 21},
+    {name: 'Jack', age: 41},
+    {name: 'Tim', age: 32},
+    {name: 'Sam', age: 35},
+    {name: 'Marry', age: 18},
+    {name: 'Anna', age: 25},
+];
+//(a)age less than 35
+
+let emp1 = employee.find(function(emp){
+    return (emp.age < 35)
+});
+let index1 = employee.findIndex(function(emp){
+    return (emp.age < 35)
+});
+console.log('age less than 35',emp1);
+console.log(' index: ', index1);
+
+//(b)start with S
+
+let name1 = employee.find(function(emp){
+    return (emp.name[0]=='S');
+});
+
+console.log('start with S: ',name1);
+
+//(c) Start with parameters
+function findName(nameArr, tofind)
+{
+    let name2 = nameArr.find(function(emp){
+        return isStart(emp,tofind);
+    });
+    return name2;
+}
+
+function findIndex(nameArr, tofind)
+{
+    let index2 = nameArr.findIndex(function(emp){
+        return isStart(emp,tofind);
+    });
+    return index2;
+}
+    console.log(' Start with parameters: ',findName(employee,'A'));
+
+    console.log('Index: ',findIndex(employee,'A'));
+
+    function isStart(emp,start){
+        return emp.name[0]==start;
+    }
