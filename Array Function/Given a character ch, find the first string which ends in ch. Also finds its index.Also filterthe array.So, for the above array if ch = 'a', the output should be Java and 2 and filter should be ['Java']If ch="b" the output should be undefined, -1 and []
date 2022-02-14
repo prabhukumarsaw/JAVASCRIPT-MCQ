@@ -1,0 +1,41 @@
+
+
+
+
+const arr = ['Hello', 'React', 'Java', 'Python', 'Hibernate', 'JavaScript'];
+//Task 5.2
+const ch='a';
+function isString(name,start)
+{
+    return  name[name.length - 1] ==start;
+}
+
+function findNameArr(nameArr, tofind)
+{
+    let arr =nameArr.find(function(name)
+{
+    return isString(name,tofind);
+});
+return arr;
+}
+
+function findIndex(nameArr, tofind)
+{
+    let index =nameArr.findIndex(function(name)
+{
+    return isString(name,tofind);
+});
+return index;
+}
+console.log(' Output', findNameArr(arr,'a'),'and',findIndex(arr,ch));
+
+//filter
+function findNameArr(nameArr, tofind)
+{
+    let arr1 =nameArr.filter(function(name)
+{
+    return isString(name,tofind);
+});
+return arr1;
+}
+console.log(' Output', findNameArr(arr,'a'));
