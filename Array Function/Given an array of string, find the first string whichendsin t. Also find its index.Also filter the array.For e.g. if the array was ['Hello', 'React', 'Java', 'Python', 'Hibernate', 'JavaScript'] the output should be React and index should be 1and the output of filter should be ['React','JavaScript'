@@ -1,0 +1,21 @@
+
+const arr = ['Hello', 'React', 'Java', 'Python', 'Hibernate', 'JavaScript'];
+
+
+//Task 5.1 Ends in t
+const ch='t';
+let name1 = arr.find(function(name){
+    return name[name.length - 1] === ch;
+});
+
+let index1=arr.findIndex(function(n){
+    return n[n.length-1] === ch;
+});
+console.log('Ends in t: ',name1 , ' and Index: ',index1);
+
+//using filter
+
+let name2 = arr.filter(function(name){
+    return name[name.length - 1] === ch;
+});
+console.log('Ends in t: ',name2);
