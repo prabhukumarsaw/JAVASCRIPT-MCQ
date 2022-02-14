@@ -1,0 +1,36 @@
+
+
+
+//Task 3.2(a) //length of name is greater than 5
+const arr = ['Yash', 'Canada', 'Marry', 'RedSquare', 'Prem',
+ 'Jyan', 'Parth', 'Payal'];
+
+let res = arr.filter(function(n){
+    return n.length>5;
+});
+console.log('greater than 5: ',res);
+
+
+
+
+//Task 3.2(b) Start with p
+const ch='P';
+let name1 = arr.filter(function(name){
+    return name[0]==ch;
+});
+
+
+console.log('Start with p: ',name1);
+
+
+//Task 3.2(b) Start with the char 
+const st='J';
+
+let name2 = arr.filter(function(name){
+    return isStart(name,st);
+});
+function isStart(name,st)
+{
+    return name[0]==st;
+}
+console.log('Find',name2);
