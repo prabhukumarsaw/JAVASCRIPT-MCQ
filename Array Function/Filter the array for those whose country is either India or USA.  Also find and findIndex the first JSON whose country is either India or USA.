@@ -1,0 +1,35 @@
+
+
+const employee = [
+    {name: "Jack",country:  "USA",age: 35},
+    {name: "Amit",country:  "India",age: 38},
+    {name: "Edward",country:  "USA",age: 41},
+    {name: "Vishal",country:  "India",age: 30},
+    {name: "Annie",country:  "USA",age: 27},
+    {name: "Nick",country:  "France",age: 32},
+    {name: "Francis",country:  "France",age: 44},
+    {name: "Preeti",country:  "India",age: 25},
+    {name: "Sophie",country:  "France",age: 29},
+    {name: "Harpreet",country:  "India",age: 48},
+    {name: "Bob",country:  "USA",age: 21}
+];
+
+/*Task 7.4  Filter the array for those whose country is either India or USA. 
+Also find and findIndex the first JSON whose country is either India or USA.*/
+
+
+ //filter
+
+let belongsTo=employee.filter(function(emp){
+    return emp.country=='India' || emp.country=='USA';
+  });
+console.log(' belongsToInd: ',belongsTo);
+
+//find first & findIndex
+let belongsTo_f=employee.find(function(emp){
+    return emp.country=='India' || emp.country=='USA';
+  });
+  let belongsTo_i=employee.findIndex(function(emp){
+    return emp.country=='India' || emp.country=='USA';
+  });
+  console.log('belongsTo_f: ',belongsTo_f,' Index: ',belongsTo_i);
