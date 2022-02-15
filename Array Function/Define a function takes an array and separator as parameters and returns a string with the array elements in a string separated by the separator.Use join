@@ -1,0 +1,13 @@
+
+
+
+let str1 =["Hi","Hello","Bye"];
+let str2 =["A","B","C"];
+let str3 =["AB","!2","EF"];
+function addSep(str,sep) {
+    return str.join(sep);
+}
+
+console.log(addSep(str1,'**'));
+console.log(addSep(str2,'Level'));
+console.log(addSep(str3,'#'));
