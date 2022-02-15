@@ -1,8 +1,4 @@
 
-
-
-
-
 const employee = [
     {name: "Jack",country:  "USA",age: 35},
     {name: "Amit",country:  "India",age: 38},
@@ -20,8 +16,18 @@ const employee = [
 /*Task 7.1  Filter the array for those whose country is India.
  Also find and findIndex the first JSON whose country is India*/
 
+ //filter
 let country= 'India';
 let belongsToInd=employee.filter(function(emp){
     return emp.country==country;
   });
 console.log(' belongsToInd: ',belongsToInd);
+
+//find first & findIndex
+let belongsToInd_f=employee.find(function(emp){
+    return emp.country==country;
+  });
+  let belongsToInd_i=employee.findIndex(function(emp){
+    return emp.country==country;
+  });
+  console.log('belongsToInd_f: ',belongsToInd_f,' Index: ',belongsToInd_i);
