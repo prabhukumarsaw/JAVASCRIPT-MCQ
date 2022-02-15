@@ -1,0 +1,41 @@
+
+
+
+
+
+const employee = [
+    {name: "Jack",country:  "USA",age: 35},
+    {name: "Amit",country:  "India",age: 38},
+    {name: "Edward",country:  "USA",age: 41},
+    {name: "Vishal",country:  "India",age: 30},
+    {name: "Annie",country:  "USA",age: 27},
+    {name: "Nick",country:  "France",age: 32},
+    {name: "Francis",country:  "France",age: 44},
+    {name: "Preeti",country:  "India",age: 25},
+    {name: "Sophie",country:  "France",age: 29},
+    {name: "Harpreet",country:  "India",age: 48},
+    {name: "Bob",country:  "USA",age: 21}
+];
+/*Task 7.5  Given a number minAge, filter the array for those whose age is greater than minAge. 
+Also find and findIndex the first JSON whose age is greater than minAge.*/
+
+ //using filter
+let minAge=35;
+let MinA=employee.filter(function(emp){
+    return emp.age>minAge;
+  });
+console.log(' MinA: ',MinA);
+
+
+//using find 
+let MinA_f=employee.find(function(emp){
+    return emp.age>minAge;
+  });
+console.log(' MinA_first: ',MinA_f);
+
+//findIndex
+let MinA_index=employee.findIndex(function(emp){
+    return emp.age>minAge;
+  });
+
+console.log(' Index: ',MinA_index);
