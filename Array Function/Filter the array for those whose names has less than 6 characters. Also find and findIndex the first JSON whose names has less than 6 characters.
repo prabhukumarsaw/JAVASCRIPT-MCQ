@@ -1,0 +1,36 @@
+
+
+const employee = [
+    {name: "Jack",country:  "USA",age: 35},
+    {name: "Amit",country:  "India",age: 38},
+    {name: "Edward",country:  "USA",age: 41},
+    {name: "Vishal",country:  "India",age: 30},
+    {name: "Annie",country:  "USA",age: 27},
+    {name: "Nick",country:  "France",age: 32},
+    {name: "Francis",country:  "France",age: 44},
+    {name: "Preeti",country:  "India",age: 25},
+    {name: "Sophie",country:  "France",age: 29},
+    {name: "Harpreet",country:  "India",age: 48},
+    {name: "Bob",country:  "USA",age: 21}
+];
+
+/*Task 7.3  Filter the array for those whose names has less than 6 characters.
+Also find and findIndex the first JSON whose names has less than 6 characters.*/
+
+ //filter
+
+let emp_name = employee.filter(function(len){
+    return (len.name).length<6;
+});
+console.log('Less than 6: ',emp_name);
+
+//find first & findIndex
+
+let emp_name_f = employee.find(function(len){
+    return (len.name).length<6;
+});
+
+let emp_name_i = employee.findIndex(function(len){
+    return (len.name).length<6;
+});
+console.log('Less than 6 first: ',emp_name_f,'Index: ',emp_name_i);
